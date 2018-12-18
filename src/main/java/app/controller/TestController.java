@@ -1,4 +1,4 @@
-package vn.com.fsoft.controller;
+package app.controller;
 
 import java.util.List;
 
@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
-import vn.com.fsoft.common.Constants;
-import vn.com.fsoft.model.Question;
-import vn.com.fsoft.model.Test;
-import vn.com.fsoft.model.TestType;
-import vn.com.fsoft.service.TestService;
-import vn.com.fsoft.service.TestTypeService;
+import app.common.Constants;
+import app.model.Question;
+import app.model.Test;
+import app.model.TestType;
+import app.service.TestService;
+import app.service.TestTypeService;
 
 /**
  * <b>TestController</b>.

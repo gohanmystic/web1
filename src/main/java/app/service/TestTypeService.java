@@ -1,11 +1,11 @@
-package vn.com.fsoft.repository;
+package app.service;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
 
-import vn.com.fsoft.model.Question;
+import app.model.TestType;
 
 /**
- * <b>QuestionRepository</b>.
+ * <b>TestTypeService</b>.
  *
  * <p>Version 1.0</p>
  *
@@ -18,6 +18,11 @@ import vn.com.fsoft.model.Question;
  * ----------------------------------------
  * <p>27-10-2018       ABC123      Create</p>
  */
-public interface QuestionRepository extends JpaRepository<Question, Integer> {
+public interface TestTypeService {
 
+    /**
+     * Find all TestType.
+     * @return List TestType
+     */
+    List<TestType> findAllTestType();
 }

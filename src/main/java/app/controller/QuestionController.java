@@ -1,4 +1,4 @@
-package vn.com.fsoft.controller;
+package app.controller;
 
 import java.util.List;
 
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import vn.com.fsoft.model.Question;
-import vn.com.fsoft.service.QuestionService;
+import app.model.Question;
+import app.service.QuestionService;
 
 /**
  * <b>QuestionController</b>.

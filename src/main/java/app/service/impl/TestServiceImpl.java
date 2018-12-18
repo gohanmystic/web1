@@ -1,13 +1,13 @@
-package vn.com.fsoft.service.impl;
+package app.service.impl;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import vn.com.fsoft.model.Question;
-import vn.com.fsoft.model.Test;
-import vn.com.fsoft.service.TestService;
+import app.model.Question;
+import app.model.Test;
+import app.service.TestService;
 
 @Service
 public class TestServiceImpl implements TestService {

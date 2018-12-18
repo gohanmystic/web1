@@ -1,8 +1,8 @@
-package vn.com.fsoft.service;
+package app.service;
 
 import java.util.List;
 
-import vn.com.fsoft.model.Question;
+import app.model.Question;
 
 /**
  * <b>QuestionService</b>.

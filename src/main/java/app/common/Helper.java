@@ -1,4 +1,4 @@
-package vn.com.fsoft.common;
+package app.common;
 
 import java.security.SecureRandom;
 

@@ -1,11 +1,11 @@
-package vn.com.fsoft.service;
+package app.service;
 
 import java.util.List;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import vn.com.fsoft.model.Question;
-import vn.com.fsoft.model.Test;
+import app.model.Question;
+import app.model.Test;
 
 /**
  * <b>TestService</b>.

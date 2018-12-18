@@ -1,6 +1,6 @@
-package vn.com.fsoft.service;
+package app.service;
 
-import vn.com.fsoft.model.TestQuestion;
+import app.model.TestQuestion;
 
 /**
  * <b>TestQuestionService</b>.

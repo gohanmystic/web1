@@ -1,8 +1,8 @@
-package vn.com.fsoft.repository;
+package app.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import vn.com.fsoft.model.Test;
+import app.model.Test;
 
 /**
  * <b>TestRepository</b>.

@@ -1,4 +1,4 @@
-package vn.com.fsoft.model;
+package app.model;
 
 import java.io.Serializable;
 

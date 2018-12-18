@@ -1,4 +1,4 @@
-package vn.com.fsoft.controller;
+package app.controller;
 
 import javax.servlet.http.HttpServletRequest;
 

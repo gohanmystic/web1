@@ -1,12 +1,12 @@
-package vn.com.fsoft.repository;
+package app.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Transactional;
 
-import vn.com.fsoft.model.TestQuestion;
-import vn.com.fsoft.model.TestQuestionPk;
+import app.model.TestQuestion;
+import app.model.TestQuestionPk;
 
 /**
  * <b>TestQuestionRepository</b>.

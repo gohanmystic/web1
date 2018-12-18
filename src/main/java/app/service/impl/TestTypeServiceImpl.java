@@ -1,13 +1,13 @@
-package vn.com.fsoft.service.impl;
+package app.service.impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import vn.com.fsoft.model.TestType;
-import vn.com.fsoft.repository.TestTypeRepository;
-import vn.com.fsoft.service.TestTypeService;
+import app.model.TestType;
+import app.repository.TestTypeRepository;
+import app.service.TestTypeService;
 
 /**
  * <b>TestTypeServiceImpl</b>.
