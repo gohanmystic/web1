@@ -5,31 +5,28 @@ import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-/**
- * <b>Test</b>.
- *
- * <p>Version 1.0</p>
- *
- * <p>Date: 27-10-2018</p>
- *
- * <p>Copyright</p>
- *
- * <p>Modification Logs:</p>
- * <p>DATE             AUTHOR      DESCRIPTION</p>
- * ----------------------------------------
- * <p>27-10-2018       ABC123      Create</p>
- */
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Parameter;
+
+import app.common.Constants;
+
 @Entity(name = "Test")
 @Table(name = "TEST")
 public class Test {
 
-    @Id
+	@Id
+    @GeneratedValue(generator = "idGenerator")
+    @GenericGenerator(
+            name = "idGenerator",
+            parameters = @Parameter(name = Constants.PREFIX_PARAM, value = Constants.PREFIX_TEST),
+            strategy = "app.common.support.GeneratorPrimaryKeySupport")
     @Column(name = "TEST_ID", length = 10)
     private String testId;
 

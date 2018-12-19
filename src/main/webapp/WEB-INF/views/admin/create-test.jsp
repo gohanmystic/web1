@@ -12,7 +12,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="card">
                     <div class="body">
-                        <form:form action="${contextPath}/test/createAction" method="post" class="form-horizontal" id="validation-form">
+                        <form:form action="${contextPath}/admin/test/createAction" method="post" class="form-horizontal" id="validation-form">
                             <div class="row clearfix">
                                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
                                     <label for="testName">Test name<span class="col-red">(*):</span></label>
@@ -91,7 +91,7 @@
                             <div class="row clearfix">
                                 <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
                                     <form:button name="save" class="btn btn-success m-t-15 w-90 waves-effect">Save</form:button>
-                                    <a id="btn-cancel" class="btn btn-warning m-t-15 w-90 waves-effect" href="${contextPath}/test/list">Cancel</a>
+                                    <a id="btn-cancel" class="btn btn-warning m-t-15 w-90 waves-effect" href="${contextPath}/admin/test/list">Cancel</a>
                                 </div>
                             </div>
                         </form:form>

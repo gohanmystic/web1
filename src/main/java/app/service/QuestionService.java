@@ -37,5 +37,5 @@ public interface QuestionService {
      * Delete question.
      * @param id : Integer
      */
-    void deleteQuestionById(Integer id);
+    void deleteQuestionById(String id);
 }

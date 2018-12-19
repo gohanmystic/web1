@@ -88,51 +88,6 @@
             </div>
         </div>
     </nav>
-    <!-- #Top Bar -->
-    <section>
-        <!-- Left Sidebar -->
-        <aside id="leftsidebar" class="sidebar">
-            <!-- Menu -->
-            <div class="menu">
-                <ul id="nav" class="list">
-                    <li class="header">MENU</li>
-                    <li>
-                        <a href="${contextPath}">
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <span>Question management</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="${contextPath}/admin/question/list">Question list</a>
-                            </li>
-                            <li>
-                                <a href="${contextPath}/admin/question/create">Create question</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <span>Test management</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="${contextPath}/admin/test/list">Test list</a>
-                            </li>
-                            <li>
-                                <a href="${contextPath}/admin/test/create">Create test</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- #Menu -->
-        </aside>
-        <!-- #END# Left Sidebar -->
-    </section>
 
     <jsp:include page="${param.view}" />
 

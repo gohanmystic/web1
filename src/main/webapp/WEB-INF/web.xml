@@ -37,8 +37,8 @@
         <servlet-name>OnlineQuiz</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-
+<!-- 
     <error-page>
         <location>/errorPage</location>
-    </error-page>
+    </error-page> -->
 </web-app>

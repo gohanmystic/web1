@@ -13,7 +13,7 @@ import app.service.TestService;
 public class TestServiceImpl implements TestService {
 
     /* (non-Javadoc)
-     * @see vn.com.fsoft.service.TestService#findAllTest()
+     * @see app.service.TestService#findAllTest()
      */
     public List<Test> findAllTest() {
         // TODO Auto-generated method stub
@@ -21,7 +21,7 @@ public class TestServiceImpl implements TestService {
     }
 
     /* (non-Javadoc)
-     * @see vn.com.fsoft.service.TestService#saveTest(vn.com.fsoft.model.Test)
+     * @see app.service.TestService#saveTest(app.model.Test)
      */
     public Test saveTest(Test test) {
         // TODO Auto-generated method stub
@@ -29,7 +29,7 @@ public class TestServiceImpl implements TestService {
     }
 
     /* (non-Javadoc)
-     * @see vn.com.fsoft.service.TestService#findTestById(java.lang.String)
+     * @see app.service.TestService#findTestById(java.lang.String)
      */
     public Test findTestById(String testId) {
         // TODO Auto-generated method stub
@@ -37,7 +37,7 @@ public class TestServiceImpl implements TestService {
     }
 
     /* (non-Javadoc)
-     * @see vn.com.fsoft.service.TestService#getQuestionList(java.lang.String)
+     * @see app.service.TestService#getQuestionList(java.lang.String)
      */
     public List<Question> getQuestionList(String testId) {
         // TODO Auto-generated method stub
@@ -45,7 +45,7 @@ public class TestServiceImpl implements TestService {
     }
 
     /* (non-Javadoc)
-     * @see vn.com.fsoft.service.TestService#saveListQuestion(java.lang.String, java.lang.String)
+     * @see app.service.TestService#saveListQuestion(java.lang.String, java.lang.String)
      */
     public void saveListQuestion(String testId, String questionIdListStr) {
         // TODO Auto-generated method stub
@@ -53,7 +53,7 @@ public class TestServiceImpl implements TestService {
     }
 
     /* (non-Javadoc)
-     * @see vn.com.fsoft.service.TestService#importExcel(org.springframework.web.multipart.MultipartFile, java.lang.String)
+     * @see app.service.TestService#importExcel(org.springframework.web.multipart.MultipartFile, java.lang.String)
      */
     public void importExcel(MultipartFile file, String testId) {
         // TODO Auto-generated method stub

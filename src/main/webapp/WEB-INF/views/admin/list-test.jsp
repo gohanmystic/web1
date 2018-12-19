@@ -12,7 +12,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <a href="${contextPath}/test/create" class="btn btn-success waves-effect">Create test</a>
+                            <a href="${contextPath}/admin/test/create" class="btn btn-success waves-effect">Create test</a>
                         </div>
                         <div class="body table-responsive">
                             <table id="data-table" class="table table-bordered table-striped">

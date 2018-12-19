@@ -1,4 +1,4 @@
-package app.controller;
+package app.controller.admin;
 
 import java.util.List;
 
@@ -16,34 +16,20 @@ import org.springframework.web.servlet.ModelAndView;
 import app.model.Question;
 import app.service.QuestionService;
 
-/**
- * <b>QuestionController</b>.
- *
- * <p>Version 1.0</p>
- *
- * <p>Date: 27-10-2018</p>
- *
- * <p>Copyright</p>
- *
- * <p>Modification Logs:</p>
- * <p>DATE             AUTHOR      DESCRIPTION</p>
- * ----------------------------------------
- * <p>27-10-2018       ABC123      Create</p>
- */
 @Controller
-@RequestMapping("question")
+@RequestMapping("admin/question")
 public class QuestionController {
 
     /** List question view name. */
-    public static final String LIST_VIEW_NAME = "list-question";
+    public static final String LIST_VIEW_NAME = "admin/list-question";
     /** Create question view name. */
-    public static final String CREATE_VIEW_NAME = "create-question";
+    public static final String CREATE_VIEW_NAME = "admin/create-question";
     /** Default model name. */
     public static final String DEFAULT_MODEL_NAME = "command";
     /** Update model name. */
     public static final String UPDATE_MODEL_NAME = "question";
     /** Base API. */
-    public static final String BASE_API = "question";
+    public static final String BASE_API = "admin/question";
 
     /** QuestionService. */
     @Autowired
@@ -94,7 +80,7 @@ public class QuestionController {
      * @return ModelAndView
      */
     @RequestMapping(value = "delete/{id}", method = RequestMethod.POST)
-    public ModelAndView deleteQuestion(@PathVariable("id") Integer id) {
+    public ModelAndView deleteQuestion(@PathVariable("id") String id) {
         questionService.deleteQuestionById(id);
 
         return new ModelAndView("redirect:/" + BASE_API + "/list");

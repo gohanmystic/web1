@@ -5,30 +5,27 @@ import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-/**
- * <b>TestType</b>.
- *
- * <p>Version 1.0</p>
- *
- * <p>Date: 27-10-2018</p>
- *
- * <p>Copyright</p>
- *
- * <p>Modification Logs:</p>
- * <p>DATE             AUTHOR      DESCRIPTION</p>
- * ----------------------------------------
- * <p>27-10-2018       ABC123      Create</p>
- */
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Parameter;
+
+import app.common.Constants;
+
 @Entity(name = "TestType")
 @Table(name = "TEST_TYPE")
 public class TestType {
 
-    @Id
-    @Column(name = "TEST_TYPE_ID", length = 10)
+	@Id
+    @GeneratedValue(generator = "idGenerator")
+    @GenericGenerator(
+            name = "idGenerator",
+            parameters = @Parameter(name = Constants.PREFIX_PARAM, value = Constants.PREFIX_TEST_TYPE),
+            strategy = "app.common.support.GeneratorPrimaryKeySupport")
+    @Column(name = "TEST_ID", length = 10)
     private String testTypeId;
 
     @Column(name = "TEST_TYPE_NAME", length = 50)

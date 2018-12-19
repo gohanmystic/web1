@@ -51,7 +51,7 @@ public class QuestionServiceImpl implements QuestionService {
      * Delete question by id.
      * @param id : Integer
      */
-    public void deleteQuestionById(Integer id) {
+    public void deleteQuestionById(String id) {
         questionRepository.delete(id);
     }
 }

@@ -1,4 +1,4 @@
-package app.controller;
+package app.controller.admin;
 
 import java.util.List;
 
@@ -22,36 +22,22 @@ import app.model.TestType;
 import app.service.TestService;
 import app.service.TestTypeService;
 
-/**
- * <b>TestController</b>.
- *
- * <p>Version 1.0</p>
- *
- * <p>Date: 28-10-2018</p>
- *
- * <p>Copyright</p>
- *
- * <p>Modification Logs:</p>
- * <p>DATE             AUTHOR      DESCRIPTION</p>
- * ----------------------------------------
- * <p>28-10-2018       ABC123      Create</p>
- */
 @Controller
-@RequestMapping("test")
+@RequestMapping("admin/test")
 public class TestController {
 
     /** List test view name. */
-    public static final String LIST_VIEW_NAME = "list-test";
+    public static final String LIST_VIEW_NAME = "admin/list-test";
     /** Create test view name. */
-    public static final String CREATE_VIEW_NAME = "create-test";
+    public static final String CREATE_VIEW_NAME = "admin/create-test";
     /** Input question view name. */
-    public static final String INPUT_QUESTION_VIEW_NAME = "input-question";
+    public static final String INPUT_QUESTION_VIEW_NAME = "admin/input-question";
     /** Default model name. */
     public static final String DEFAULT_MODEL_NAME = "command";
     /** Update model name. */
     public static final String UPDATE_MODEL_NAME = "test";
     /** Base API. */
-    public static final String BASE_API = "test";
+    public static final String BASE_API = "admin/test";
 
     /** TestService. */
     @Autowired

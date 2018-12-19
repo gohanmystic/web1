@@ -21,12 +21,21 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class IndexController {
 
-    /**
+	/**
      * Show home page.
      * @return String
      */
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String showHomePage() {
-        return "index";
+        return "user/index";
+    }
+	
+    /**
+     * Show home page.
+     * @return String
+     */
+    @RequestMapping(value = "/admin", method = RequestMethod.GET)
+    public String showHomePageAdmin() {
+        return "admin/index";
     }
 }

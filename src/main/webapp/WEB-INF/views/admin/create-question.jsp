@@ -12,7 +12,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="card">
                     <div class="body">
-                        <form:form action="${contextPath}/question/createAction" method="post" id="validation-form" class="form-horizontal">
+                        <form:form action="${contextPath}/admin/question/createAction" method="post" id="validation-form" class="form-horizontal">
                             <div class="row clearfix">
                                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
                                     <label for="content">Question content<span class="col-red">(*):</span></label>
@@ -76,7 +76,7 @@
                             <div class="row clearfix">
                                 <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
                                     <form:button name="save" class="btn btn-success m-t-15 w-90 waves-effect">Save</form:button>
-                                    <a id="btn-cancel" class="btn btn-warning m-t-15 w-90 waves-effect" href="${contextPath}/question/list">Cancel</a>
+                                    <a id="btn-cancel" class="btn btn-warning m-t-15 w-90 waves-effect" href="${contextPath}/admin/question/list">Cancel</a>
                                 </div>
                             </div>
                         </form:form>

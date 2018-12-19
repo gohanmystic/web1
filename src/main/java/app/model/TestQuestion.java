@@ -8,20 +8,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-/**
- * <b>TestQuestion</b>.
- *
- * <p>Version 1.0</p>
- *
- * <p>Date: 27-10-2018</p>
- *
- * <p>Copyright</p>
- *
- * <p>Modification Logs:</p>
- * <p>DATE             AUTHOR      DESCRIPTION</p>
- * ----------------------------------------
- * <p>27-10-2018       ABC123      Create</p>
- */
 @Entity(name = "TestQuestion")
 @Table(name = "TEST_QUESTION")
 @IdClass(TestQuestionPk.class)
@@ -29,7 +15,7 @@ public class TestQuestion {
 
     @Id
     @Column(name = "QUESTION_ID", length = 10)
-    private Integer questionId;
+    private String questionId;
 
     @Id
     @Column(name = "TEST_ID", length = 10)
@@ -43,15 +29,15 @@ public class TestQuestion {
     @JoinColumn(name = "TEST_ID", referencedColumnName = "TEST_ID", insertable = false, updatable = false)
     private Test test;
 
-    public Integer getQuestionId() {
-        return questionId;
-    }
+    public String getQuestionId() {
+		return questionId;
+	}
 
-    public void setQuestionId(Integer questionId) {
-        this.questionId = questionId;
-    }
+	public void setQuestionId(String questionId) {
+		this.questionId = questionId;
+	}
 
-    public String getTestId() {
+	public String getTestId() {
         return testId;
     }
 

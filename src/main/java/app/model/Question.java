@@ -6,36 +6,28 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
-/**
- * <b>Question</b>.
- *
- * <p>Version 1.0</p>
- *
- * <p>Date: 27-10-2018</p>
- *
- * <p>Copyright</p>
- *
- * <p>Modification Logs:</p>
- * <p>DATE             AUTHOR      DESCRIPTION</p>
- * ----------------------------------------
- * <p>27-10-2018       ABC123      Create</p>
- */
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Parameter;
+
+import app.common.Constants;
+
 @Entity(name = "Question")
 @Table(name = "QUESTION")
 public class Question {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "AUTO_INCREMENT")
-    @SequenceGenerator(name = "AUTO_INCREMENT", sequenceName = "AUTO_INCREMENT", allocationSize = 1, initialValue = 1)
+	@Id
+    @GeneratedValue(generator = "idGenerator")
+    @GenericGenerator(
+            name = "idGenerator",
+            parameters = @Parameter(name = Constants.PREFIX_PARAM, value = Constants.PREFIX_QUESTION),
+            strategy = "app.common.support.GeneratorPrimaryKeySupport")
     @Column(name = "QUESTION_ID", length = 10)
-    private Integer questionId;
+    private String questionId;
 
     @Column(name = "CONTENT", length = 1000)
     private String content;
@@ -72,15 +64,15 @@ public class Question {
         this.answer3 = answer3;
     }
 
-    public Integer getQuestionId() {
-        return questionId;
-    }
+    public String getQuestionId() {
+		return questionId;
+	}
 
-    public void setQuestionId(Integer questionId) {
-        this.questionId = questionId;
-    }
+	public void setQuestionId(String questionId) {
+		this.questionId = questionId;
+	}
 
-    public String getContent() {
+	public String getContent() {
         return content;
     }
 
